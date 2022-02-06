@@ -9,7 +9,6 @@
 # Add dependencies.
 import csv
 import os
-
 # Assign a variable for the file to load.
 file_to_load = os.path.join("Resources","election_results.csv")
 #Assign a variable for the file to save.
@@ -61,8 +60,11 @@ with open(file_to_save, "w") as txt_file:
         #Calculate the percentage of votes.
         vote_percentage = float(votes) / float(total_votes)*100
         #Print the candidates name and percentage of votes.
-        ##print(f"{candidate_name}: recieved {vote_percentage:.1f}% of the vote.")
-        
+        candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        print(candidate_results)
+        ##print(winning_candidate_summary) 
+        txt_file.write(candidate_results)  
+
         #Determine winning vote count and candidate
         #Determine if the votes are greater than the winning count.
         if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -79,13 +81,9 @@ with open(file_to_save, "w") as txt_file:
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------\n")
 
-    election_results = (
-        f"\nElection Results\n"
-        f"-------------------------\n"
-        f"Total Votes: {total_votes:,}\n"
-        f"-------------------------\n")
-    print(election_results, end="")
 
+    print(winning_candidate_summary, end="")
+
+   
     #savethe final vote count to the text file
-    txt_file.write(election_results)
-    ##print(winning_candidate_summary)
+    txt_file.write(winning_candidate_summary)
