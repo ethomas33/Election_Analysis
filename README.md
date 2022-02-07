@@ -29,6 +29,8 @@ Votes for candidates:
 
 
 ## Election-Audit Summary: 
-This script allows us to do a variety of calculations on any dataset that contains county name and election winner name. As you can see the results can be formatted and output into a final file to 
+This script allows us to do a variety of calculations on any dataset that contains county name and election winner name. As you can see the results can be formatted and output into one or multiple final files depending on use case and need. 
+
+![election_analysis_output](https://github.com/ethomas33/Election_Analysis/blob/074e092017c3009deed19681d5b0030fa986c7e3/analysis/election_analysis_screenshot.png)
 
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
