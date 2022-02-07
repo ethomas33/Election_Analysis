@@ -34,3 +34,6 @@ This script allows us to do a variety of calculations on any dataset that contai
 ![election_analysis_output](https://github.com/ethomas33/Election_Analysis/blob/074e092017c3009deed19681d5b0030fa986c7e3/analysis/election_analysis_screenshot.png)
 
 This analysis can easily be expanded to indclude more counties and candidates, the output can be manipulated or rearranged into one or multiple final files depending on use case and need and even be tailored to an individual candidate. 
+
+## Other outputs
+![election_analysis_terminaloutput](https://github.com/ethomas33/Election_Analysis/blob/4f6c614313ea66aeeb8963a0a53b957b44182600/analysis/terminal_results.png)
